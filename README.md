@@ -1,12 +1,12 @@
-# TRABALHO 01:  Título do Trabalho
+# TRABALHO 01:  ManiMobile
 Trabalho desenvolvido durante a disciplina de BD
 
 # Sumário
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-seu_nome:seu_email@dominio.com<br>
-segundo_nome:segundo_email@dominio.com<br>
+João Pedro Vieira : joaop.vieira.jpvp@gmail.com<br>
+Marcelo Passamai Mendes : marceloestudoifes@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Atualmente a demanda de serviços para saúde e beleza é grande, mas ainda carece de profissionalismo, esse serviço é oferecido em salões ou de forma autônoma, com preços que podem variar muito, sem saber a métrica da cobrança.
