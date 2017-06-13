@@ -62,11 +62,87 @@ Sugestão: https://github.com/joaopvp1/trab01/blob/master/images/manimobile%20(2
 
 
 ### 6	MODELO LÓGICO<br>
-    ![](https://raw.githubusercontent.com/joaopvp1/trab01/master/images/Logico_Manimobile.jpg)
+
+![](https://github.com/joaopvp1/trab01/blob/master/images/Logico_Manimobile.jpg?raw=true "Modelo Logico")
+ 
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas DDL 
-        (criação de tabelas, alterações, etc..)
+       
+CREATE TABLE Atendimento (
+valor FLOAT,
+data DATE,
+hora VARCHAR(100),
+codAtend INTEGER PRIMARY KEY,
+nota INTEGER,
+cometario VARCHAR(100),
+codMani INTEGER
+)
+
+CREATE TABLE Manicure (
+telefone VARCHAR(100),
+codMani INTEGER PRIMARY KEY,
+email VARCHAR(100),
+nome VARCHAR(100),
+cpf CHAR(11),
+rg VARCHAR(15),
+numConta INTEGER,
+idLoc INTEGER
+)
+
+CREATE TABLE Localizacao (
+latitude VARCHAR(100)
+longitude VARCHAR(100),
+descricao VARCHAR(100),
+idLoc INTEGER PRIMARY KEY
+)
+
+CREATE TABLE Pagamento_atendimento (
+id_pgmt INTEGER PRIMARY KEY,
+data DATE,
+valor_pago FLOAT,
+hora VARCHAR(100),
+codAtend INTEGER,
+numConta INTEGER,
+numero INTEGER,
+FOREIGN KEY(codAtend) REFERENCES Atendimento (codAtend)
+)
+
+CREATE TABLE Cliente (
+telefone INTEGER,
+email VARCHAR(100),
+nome VARCHAR(100),
+codCliente INTEGER PRIMARY KEY,
+numero INTEGER,
+idLoc INTEGER,
+FOREIGN KEY(idLoc) REFERENCES Localizacao (idLoc)
+)
+
+CREATE TABLE Cartao_cliente (
+nome_cliente VARCHAR(100),
+numero INTEGER PRIMARY KEY,br>
+validade DATE
+)
+
+CREATE TABLE Conta_manicure (
+agencia INTEGER,
+numConta INTEGER PRIMARY KEY,
+banco VARCHAR(100),
+operacao INTEGER
+)
+
+CREATE TABLE Agenda (
+codCliente INTEGER,
+codAtend INETEGR,
+FOREIGN KEY(codCliente) REFERENCES Cliente (codCliente),
+FOREIGN KEY(codAtend) REFERENCES Atendimento (codAtend)
+)
+
+ALTER TABLE Atendimento ADD FOREIGN KEY(codMani) REFERENCES Manicure (codMani)
+ALTER TABLE Manicure ADD FOREIGN KEY(numConta) REFERENCES Conta_manicure (numConta)<br>
+ALTER TABLE Manicure ADD FOREIGN KEY(idLoc) REFERENCES Localizacao (idLoc)
+ALTER TABLE Pagamento_atendimento ADD FOREIGN KEY(numConta) REFERENCES Conta_manicure (numConta)
+ALTER TABLE Pagamento_atendimento ADD FOREIGN KEY(numero) REFERENCES Cartao_cliente (numero)
+ALTER TABLE Cliente ADD FOREIGN KEY(numero) REFERENCES Cartao_cliente (numero)
           
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
