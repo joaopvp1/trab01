@@ -153,6 +153,20 @@ ALTER TABLE Cliente ADD FOREIGN KEY(numero) REFERENCES Cartao_cliente (numero)
 
 
 #### 8.2 INCLUSÃO DO SCRIPT DE INSERÇÃO DOS DADOS
+
+INSERT INTO PESSOA(cpf,rg,nome,telefone,email)values
+    ('1470689715','631930','Vanda',996282474,'vandadelicia@gmail.com'),
+    ('1270689715','131930','Marcia',996282494,'imperadora@gmail.com'),
+    ('2470689715','231930','Luana',996282484,'lualua@gmail.com'),
+    ('3470689715','331930','Amanda',996282464,'amandinha@gmail.com'),
+    ('1479689717','831930','Ana',996289974,'anaafurcao2000@gmail.com'),
+    ('7470689715','931930','Daniela',998882474,'danielabolada@gmail.com'),
+    ('8470689715','731930','Gilda',996142474,'Gildelicia@gmail.com'),
+    ('9470689715','681930','Leia',996282474,'starwars@gmail.com'),
+    ('9870689715','611930','Lucia',996212374,'lulu157@gmail.com'),
+    ('0070689715','691930','Lara',999872474,'laraousada@gmail.com');
+
+
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
         b) inclusão das instruções para execução de outros procedimentos necessários (caso existam)
         c) formato .SQL
