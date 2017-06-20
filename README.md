@@ -166,8 +166,7 @@ INSERT INTO PESSOA(cpf,rg,nome,telefone,email)values
        ('9870689715','611930','Lucia',996212374,'lulu157@gmail.com'),
        ('0070689715','691930','Lara',999872474,'laraousada@gmail.com');
 
-
-#INSERT INTO LOCALIZACAO(id_loc, latitude, longitude, descricao) values
+INSERT INTO LOCALIZACAO(id_loc, latitude, longitude, descricao) values
     (1,-33.453550381292246, -40.30644169407329,'casa numero 10'),
     (2,-33.19812364733556, 	-40.3034907038874,'casa numero 11'),
     (3,-33.37070728878895, 	-40.30881753044135,'casa numero 98'),
