@@ -214,6 +214,7 @@ INSERT INTO PESSOA(cpf,rg,nome,telefone,email)values
         
 ### 12   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
 ### 13   TRABALHO DE MINERAÇÃO DE DADOS
+
         a) captura das informaçõs
         b) integração com banco de dados em desenvolvimento
         c) atualização da documentação do trabalho incluindo a mineração de dados
