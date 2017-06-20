@@ -88,8 +88,8 @@ idLoc INTEGER
 )
 
 CREATE TABLE Localizacao (
-latitude VARCHAR(100)
-longitude VARCHAR(100),
+latitude FLOAT,
+longitude FLOAT,
 descricao VARCHAR(100),
 idLoc INTEGER PRIMARY KEY
 )
