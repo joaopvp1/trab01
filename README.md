@@ -52,11 +52,50 @@ Os mockups estão disponiveis no link a seguir. [Mockups](https://github.com/joa
     b) justifique!
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    PESSOA: Tabela que armazena as informações relativas a pessoas<br>
+CPF: campo que armazena o número de Cadastro de Pessoa Física para pessoa<br>
+NOME: campo que armazena o nome de cada pessoa<br>
+EMAIL: campo que armazena o e-mail de cada pessoa<br>
+TELEFONE: campo que armazena o telefone de cada cliente<br>
+RG: campo que armazena o numero da Carteira de Identidade de cada pessoa<br>
+
+CLIENTE: Tabela que armazena as informações relativas a clientes<br>
+COD_CLIENTE: campo que armazena o codigo de registro de cada cliente no sistema<br>
+
+MANICURE: Tabela que armazena as informações relativas a manicures<br>
+COD_MANI: campo que armazena o codigo de registro de cada manicure no sistema<br>
+
+CARTAO_CLIENTE: Tabela que armazena as informações relativas aos cartões de crédito dos cliente<br>
+NUM_CARTAO: campo que armazena o numero do cartão de credito de cada cliente<br>
+VALIDADE: campo que armazena a data de validade de cada cartão de credito<br>
+
+ATENDIMENTO: Tabela que armazena as informações relativas a todos os atendimentos que foram agendados<br>
+COD_ATEND: campo que armazena o codigo de registro de cada atendimento<br>
+VALOR: campo que armazena o valor cobrado pela manicure para realizar o atendimento<br>
+DATA: campo que armazena a data de realização do atendimento<br>
+HORA: campo que armazena a hora em que o atendimento foi realizado<br>
+NOTA: campo que armazena a nota que o cliente atribuiu ao atendimento<br>
+COMENTARIO campo que armazena um possivel comentário feito pelo cliente sobre o atendimento<br>
+
+LOCALIZACAO: Tabela que armazena as informações relativas a localizações das pessoas<br>
+LONGITUDE: campo que armazena as informações da longitude de cada pessoa<br>
+LATITUDE: campo que armazena as informações da latiture de cada pessoa<br>
+DESCRICAO: campo que armazena a descrição(ou ponto de referência) da localização<br>
+
+PAGAMENTO_ATENDIMENTO: Tabela que armazena as informações do pagamento do atendimento<br>
+ID_PG: campo que armazena o codigo de registro do pagamento efetuado<br>
+VALOR_PAGO: campo que armazena o valor em dinheiro pago pelo cliente<br>
+DATA_PG: campo que armazena a data em que o pagamento foi efetuado<br>
+HORA_PG: campo que armazena a hora em que o pagamento foi efetuado<br>
+
+CONTA_MANICURE: Tabela que armazena as informações da conta bancária da manicure<br>
+NUM_CONTA: campo que armazena o numero da conta bancária da manicure<br>
+AGENCIA: campo que armazena o numero da agência bancaria da manicure<br>
+OPERACAO: campo que armazena o numero da operação da conta bancária da manicure<br>
+
+BANCO: Tabela que armazena as informações do banco em que a conta da manicure está viculada<br>
+NOME_BANCO: campo que armazena o nome do banco da conta da manicure<br>
+COD_BANCO: campo que armazena o codigo de registro do banco<br>
 
 
 ### 6	MODELO LÓGICO<br>
