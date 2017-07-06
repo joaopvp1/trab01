@@ -32,17 +32,12 @@ Os mockups estão disponiveis no link a seguir. [Mockups]([https://github.com/jo
 
 [Tabela](https://github.com/joaopvp1/trab01/blob/master/arquivos/tabela.xlsx)
 
-```
-
-```
-
-### 5.MODELO CONCEITUAL
+5.MODELO CONCEITUAL
 
 
 
 ```
 A) NOTACAO ENTIDADE RELACIONAMENTO
-
 ```
 
 [![Alt text](https://github.com/joaopvp1/trab01/raw/master/images/Manimobile_conceitual.jpg?raw=true)](https://github.com/joaopvp1/trab01/blob/master/images/Manimobile_conceitual.jpg?raw=true)
@@ -59,21 +54,20 @@ C) QUALIDADE
 #### 5.1 Validação do Modelo Conceitual
 
 ```
-[Grupo01]: [Nomes dos que participaram na avaliação]
+[EVASÃO E AUTOMAÇÃO ASSISTÊNCIA ESTUDANTIL]: [Antonio Carlos Lemos Junior,Lucas Oliveira Garcia,
+Paulo Ricardo Viana Ferreira]
 [Grupo02]: [Nomes dos que participaram na avaliação]
-
 ```
 
 #### 5.2 DECISÕES DE PROJETO
 
 ```
-[atributo]: [descrição da decisão]
+[rg]: [exclusao]
 
 EXEMPLO:
 a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
 pode possuir para cada departamento mais de uma localização... 
 b) justifique!
-
 ```
 
 #### 5.3 DESCRIÇÃO DOS DADOS
@@ -609,6 +603,18 @@ ON(banco.cod_banco = conta.cod_banco);
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Todas Possíveis)
 
+```
+CREATE VIEW atendimento_pagamento AS
+SELECT cod_atend AS numero_atendimento, valor AS valor_cobrado
+FROM atendimento;
+
+SELECT * FROM atendimento_pagamento;
+```
+
+![](https://raw.githubusercontent.com/joaopvp1/trab01/master/images/view%20atend%20pg.JPG)
+
+
+
 #### 9.10	SUBCONSULTAS (Mínimo 3)
 
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)
@@ -616,11 +622,7 @@ ON(banco.cod_banco = conta.cod_banco);
 ### 11	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS
 
 ```
-    a) Outros grupos deverão ser capazes de restaurar o banco 
-    b) executar todas as consultas presentes no trabalho
-    c) executar códigos que tenham sido construídos para o trabalho 
-    d) realizar qualquer procedimento executado pelo grupo que desenvolveu o trabalho
-
+Para fazer uso das informações desse banco de dados, basta criar uma nova base de dados no Postgres, baixar o arquivo de criação mais inserção nas tabelas, que está no item 8.3, e executar os comandos descritos no arquivo no banco de dado criado.
 ```
 
 ### 12 DIFICULDADES ENCONTRADAS PELO GRUPO
