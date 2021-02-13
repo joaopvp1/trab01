@@ -1,0 +1,17 @@
+import psycopg2
+
+#conexao= psycopg2.connect(host="localhost", user="postgres", password="Aluno",dbname="teste")
+conexao = psycopg2.connect("host=localhost user=postgres password=Aluno dbname=teste")
+#criada conexa com banco
+
+
+c = conexao.cursor()
+
+#c.execute("INSERT INTO tabela(nome,telefone)VALUES('joao','19991234'),('CArlos','22349999');")#comando que executa as querys sql
+#conexao.commit()
+
+c.execute("SELECT nome FROM tabela;")
+print(c.fetchall())
+
+c.close()
+conexao.close()
